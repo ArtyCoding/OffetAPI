@@ -17,12 +17,10 @@ namespace OfferAPI.Controllers
     [ApiController]
     public class OfferController : ControllerBase
     {
-        private readonly OfferAPIContext _context;
         private readonly IOfferRepository _offerRepository;
 
-        public OfferController(OfferAPIContext context, IOfferRepository offerRepository)
+        public OfferController( IOfferRepository offerRepository)
         {
-            _context = context;
             _offerRepository = offerRepository;
         }
 
