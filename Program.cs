@@ -18,9 +18,6 @@ builder.Services.AddTransient<ISupplierRepository, SupplierRepository>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-//builder.Services.AddTransient<IOfferDbContext>(provider => provider.GetService<OfferAPIContext>());
-//builder.Services.AddTransient<OfferAPIContext>();
-
 var app = builder.Build();
 
 if (args.Length == 1 && args[0].ToLower() == "seeddata")
